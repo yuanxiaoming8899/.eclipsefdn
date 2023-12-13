@@ -303,5 +303,17 @@ orgs.newOrg('eclipse-basyx') {
         enabled: false,
       },
     },
+    orgs.newRepo('basyx-wiki') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      default_branch: "master",
+      delete_branch_on_merge: false,
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        enabled: false,
+      },
+    },
   ],
 }
