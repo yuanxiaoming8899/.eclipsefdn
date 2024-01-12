@@ -313,6 +313,18 @@ orgs.newOrg('eclipse-basyx') {
       workflows+: {
         enabled: false,
       },
+      webhooks: [
+        orgs.newRepoWebhook('https://readthedocs.org/api/v2/webhook/basyx-wiki/253837/') {
+          content_type: "json",
+          events+: [
+            "create",
+            "delete",
+            "pull_request",
+            "push"
+          ],
+          secret: "pass:bots/dt.basyx/readthedocs.org/wiki-webhook-secret",
+        },
+      ],
     },
   ],
 }
