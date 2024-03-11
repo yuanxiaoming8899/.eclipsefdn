@@ -55,7 +55,6 @@ orgs.newOrg('eclipse-basyx') {
     },
     orgs.newRepo('basyx-archive') {
       archived: true,
-      dependabot_alerts_enabled: false,
       description: "Archived single repo",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
@@ -305,8 +304,6 @@ orgs.newOrg('eclipse-basyx') {
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
-      secret_scanning: "enabled",
-      secret_scanning_push_protection: "enabled",
       web_commit_signoff_required: false,
       workflows+: {
         enabled: false,
