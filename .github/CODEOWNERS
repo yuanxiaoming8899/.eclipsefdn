@@ -2,4 +2,4 @@
 *             @eclipse-basyx/eclipsefdn-releng
 
 # Otterdog related configurations are also owned by the security team.
-/otterdog/**  @eclipse-basyx/eclipsefdn-security @eclipse-basyx/eclipsefdn-releng
+/otterdog/**  @eclipse-basyx/eclipsefdn-security
